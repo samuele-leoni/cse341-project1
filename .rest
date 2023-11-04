@@ -1,1 +1,6 @@
-GET https://project1-ht4k.onrender.com
+# Get all contacts
+GET https://project1-ht4k.onrender.com/contacts
+
+### Get contact by id
+
+GET https://project1-ht4k.onrender.com/contacts/654689db4612a6c7c66d2a55
