@@ -1,6 +1,36 @@
 # Get all contacts
-GET https://project1-ht4k.onrender.com/contacts
+GET http://localhost:3000/contacts
 
 ### Get contact by id
 
-GET https://project1-ht4k.onrender.com/contacts/654689db4612a6c7c66d2a55
+GET http://localhost:3000/contacts/654689db4612a6c7c66d2a55
+
+### Create contact
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "email": "test@test.com",
+    "birthday": "1990-01-01",
+    "favoriteColor": "blue",
+    "firstName": "Test",
+    "lastName": "Test"
+}
+
+### Update contact
+
+PUT http://localhost:3000/contacts/654fbb2e5406cac64f60e94d HTTP/1.1
+content-type: application/json
+
+{
+    "email": "test@test.com",
+    "birthday": "1996-05-22T00:00:00.000Z",
+    "favoriteColor": "green",
+    "firstName": "Example",
+    "lastName": "Test"
+}
+
+### Delete contact
+
+DELETE http://localhost:3000/contacts/654fbb2e5406cac64f60e94d HTTP/1.1
